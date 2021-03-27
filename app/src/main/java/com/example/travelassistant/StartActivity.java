@@ -27,8 +27,7 @@ public class StartActivity extends AppCompatActivity {
     SharedPreferences sharedPreferences;
     MyTask myTask = new MyTask();
     private String mJSONURLString = "https://myrik8333.github.io/moscow.json";
-    private String mJSONURLString2 = "https://myrik8333.github.io/piter.json";
-    private String mJSONURLString3 = "https://myrik8333.github.io/kazan.json";
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
