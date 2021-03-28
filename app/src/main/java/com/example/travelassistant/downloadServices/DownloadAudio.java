@@ -56,7 +56,7 @@ public class DownloadAudio implements Runnable {
                         // TODO handle the response
                         try {
                             if (response!=null) {
-                                sharedPreferences.
+                                //sharedPreferences.
 
 //                                FileOutputStream outputStream;
 //                                String name=fileName;

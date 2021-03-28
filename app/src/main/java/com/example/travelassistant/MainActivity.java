@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 
 import com.example.travelassistant.downloadServices.DownloadAudio;
+import com.example.travelassistant.routings.RoutinNavigationActivity;
 
 import java.time.LocalDate;
 
@@ -34,16 +35,18 @@ public class MainActivity extends AppCompatActivity {
         pedestrian.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                Intent intentPed = new Intent(MainActivity.this, RoutingActivity.class);
+                Intent intentPed = new Intent(MainActivity.this, RoutinNavigationActivity.class);
+                //intentPed.putExtra("pedestrian", "pedestrian");
                 startActivity(intentPed);
+
             }
         });
 
         baisicle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentPed = new Intent(MainActivity.this, RoutingActivity.class);
+                Intent intentPed = new Intent(MainActivity.this, RoutinNavigationActivity.class);
+                //intentPed.putExtra("baisicle", "baisicle");
                 startActivity(intentPed);
 
             }
@@ -52,9 +55,9 @@ public class MainActivity extends AppCompatActivity {
         cargo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentPed = new Intent(MainActivity.this, RoutingActivity.class);
+                Intent intentPed = new Intent(MainActivity.this, RoutinNavigationActivity.class);
+                //intentPed.putExtra("cargo", "cargo");
                 startActivity(intentPed);
-
             }
         });
 

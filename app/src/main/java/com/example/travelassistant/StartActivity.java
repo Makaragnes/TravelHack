@@ -9,6 +9,7 @@ import android.util.Log;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.room.Room;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -17,8 +18,11 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 
+
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.util.List;
 
 
 public class StartActivity extends AppCompatActivity {
@@ -45,6 +49,12 @@ public class StartActivity extends AppCompatActivity {
 
         @Override
         protected Void doInBackground(Void... params) {
+
+            // Init the database
+//            AppDatabase db = Room.databaseBuilder(getApplicationContext(),
+//                    AppDatabase.class, "database-name").build();
+//            UserDao userDao = db.userDao();
+//            List<userDataclass> users = userDao.getAll();
 
             RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
 
@@ -94,7 +104,7 @@ public class StartActivity extends AppCompatActivity {
             Handler handler = new Handler();
             handler.postDelayed(new Runnable() {
                 public void run() {
-                    Intent intent = new Intent(StartActivity.this, MainActivity.class);
+                    Intent intent = new Intent(StartActivity.this, TownActivity.class);
                     startActivity(intent);
                     //dialog.dismiss();
                 }

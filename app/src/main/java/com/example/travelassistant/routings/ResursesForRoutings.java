@@ -4,18 +4,12 @@ import android.media.Image;
 
 public class ResursesForRoutings{
     String description;
-    Image image;
-
-    public Image getImage() {
-        return image;
-    }
 
 
 
 
-    public ResursesForRoutings(String description, Image image){
+    public ResursesForRoutings(String description){
         this.description = description;
-        this.image = image;
 
     }
 

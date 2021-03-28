@@ -33,7 +33,9 @@ public class RoutingActivity extends AppCompatActivity implements AdapterForRout
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_for_routing);
+        setContentView(R.layout.activity_static_routings);
+        ides.add("fff");
+        ides.add("fggh");
         //false  cause of logic  works  only if  false , stupid kiriufa can't make logic /
         //bugaga kirill - midle android developer
         downloadAudio = new DownloadAudio(mJSONURLString, "moscow.json", getApplicationContext(),false);

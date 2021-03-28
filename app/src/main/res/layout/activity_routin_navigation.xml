@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:nestedScrollingEnabled="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints,NotSibling">
+
+        <GridLayout
+            android:stretchColumns="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:clickable="true"
+                android:id="@+id/moscowcontainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/marshrut"
+                    tools:layout_editor_absoluteX="8dp">
+                </ImageView>
+
+                <TextView
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:text="Маршрут 1"
+                    android:layout_below="@+id/image1"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/routingName2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:clickable="true"
+                android:id="@+id/moscowcontainer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image2"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/marshrut"
+                    tools:layout_editor_absoluteX="8dp">
+                </ImageView>
+
+                <TextView
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:text="Маршрут 2"
+                    android:layout_below="@+id/image2"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/routingName22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:clickable="true"
+                android:id="@+id/moscowcontainer3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image3"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/marshrut"
+                    tools:layout_editor_absoluteX="8dp">
+                </ImageView>
+
+                <TextView
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:text="Маршрут 3"
+                    android:layout_below="@+id/image3"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/routingName3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:clickable="true"
+                android:id="@+id/moscowcontainer4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image4"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/marshrut"
+                    tools:layout_editor_absoluteX="8dp">
+                </ImageView>
+
+                <TextView
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:text="Маршрут 5"
+                    android:layout_below="@+id/image4"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/routingName4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:clickable="true"
+                android:id="@+id/moscowcontainer5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image5"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/marshrut"
+                    tools:layout_editor_absoluteX="8dp">
+                </ImageView>
+
+                <TextView
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:text="Маршрут 6"
+                    android:layout_below="@+id/image5"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/routingName5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:clickable="true"
+                android:id="@+id/moscowcontainer6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image6"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/marshrut"
+                    tools:layout_editor_absoluteX="8dp">
+                </ImageView>
+
+                <TextView
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:text="@string/app_name"
+                    android:layout_below="@+id/image6"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/routingName6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+            </RelativeLayout>
+        </GridLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

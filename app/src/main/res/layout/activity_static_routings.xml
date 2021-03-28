@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_below="@id/linearLayout2"
+        android:nestedScrollingEnabled="true"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints,NotSibling">
+
+        <GridLayout
+            android:stretchColumns="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/moscowcontainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/marshrut"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+                    tools:layout_editor_absoluteX="8dp">
+                </ImageView>
+
+                <TextView
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:text="@string/app_name"
+                    android:layout_below="@+id/image1"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/routingName2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:id="@+id/vlgcontainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image2"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/marshrut"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+                    tools:layout_editor_absoluteX="8dp">
+
+                </ImageView>
+
+                <TextView
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:text="@string/app_name"
+                    android:layout_below="@+id/image2"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/routingName3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:id="@+id/yfacontainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image3"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/marshrut"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+                    tools:layout_editor_absoluteX="8dp">
+
+                </ImageView>
+
+                <TextView
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:text="@string/app_name"
+                    android:layout_below="@+id/image3"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/routingName4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+            </RelativeLayout>
+            <RelativeLayout
+
+                android:id="@+id/yfacontainer4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image4"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/marshrut"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+                    tools:layout_editor_absoluteX="8dp">
+
+                </ImageView>
+
+                <TextView
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:text="@string/app_name"
+                    android:layout_below="@+id/image4"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/routingName5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:id="@+id/yfacontainer5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image5"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/marshrut"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+                    tools:layout_editor_absoluteX="8dp">
+
+                </ImageView>
+
+                <TextView
+                    android:textSize="22sp"
+                    android:textColor="@color/black"
+                    android:text="@string/app_name"
+                    android:layout_below="@+id/image5"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/routingName6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+            </RelativeLayout>
+        </GridLayout>
+
+        <RelativeLayout
+
+            android:id="@+id/yfacontainere"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image3r"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/marshrut"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+                tools:layout_editor_absoluteX="8dp">
+
+            </ImageView>
+
+            <TextView
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:text="@string/app_name"
+                android:layout_below="@+id/image3r"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/routingName4y"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

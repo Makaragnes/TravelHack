@@ -79,7 +79,7 @@ public class AdapterForRoutings extends RecyclerView.Adapter<AdapterForRoutings.
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         LinearLayout linearLayout;
         TextView textView;
-        ImageView imageView;
+        //ImageView imageView;
         OnNoteListener onNoteListener;
         ConstraintLayout constraintLayout;
         public ViewHolder(@NonNull View itemView, OnNoteListener onNoteListener) {
@@ -87,8 +87,8 @@ public class AdapterForRoutings extends RecyclerView.Adapter<AdapterForRoutings.
             constraintLayout = itemView.findViewById(R.id.rootView);
             linearLayout = itemView.findViewById(R.id.linearLayout);
             linearLayout.setOnClickListener(this);
-            textView = itemView.findViewById(R.id.textView);
-            imageView = itemView.findViewById(R.id.imageView);
+            textView = itemView.findViewById(R.id.routingName);
+            //imageView = itemView.findViewById(R.id.imageView);
             this.onNoteListener = onNoteListener;
 
             itemView.setOnClickListener(this);
