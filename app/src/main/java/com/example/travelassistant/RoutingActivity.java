@@ -10,6 +10,7 @@ import android.util.Log;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.travelassistant.downloadServices.DownloadAudio;
 import com.example.travelassistant.routings.AdapterForRoutings;
 import com.example.travelassistant.routings.ResursesForRoutings;
 
@@ -22,14 +23,21 @@ import java.util.ArrayList;
 
 public class RoutingActivity extends AppCompatActivity implements AdapterForRoutings.OnNoteListener {
     private static final String TAG = "LOG";
+    private String mJSONURLString = "https://myrik8333.github.io/moscow.json";
+
     public ArrayList<ResursesForRoutings> resorsesForUnivers = new ArrayList<>();
     public ArrayList<String> ides = new ArrayList<String>();
     SharedPreferences sharedPreferences;
+    DownloadAudio downloadAudio;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_for_routing);
+        //false  cause of logic  works  only if  false , stupid kiriufa can't make logic /
+        //bugaga kirill - midle android developer
+        downloadAudio = new DownloadAudio(mJSONURLString, "moscow.json", getApplicationContext(),false);
+        downloadAudio.startDownloading(mJSONURLString);
 
         RecyclerView recyclerView = findViewById(R.id.list2);
         AdapterForRoutings adapter = new AdapterForRoutings(this, resorsesForUnivers, this);
@@ -42,6 +50,8 @@ public class RoutingActivity extends AppCompatActivity implements AdapterForRout
         final String mos = sharedPreferences.getString("mos", "");
         final String pit = sharedPreferences.getString("pit", "");
         final String kas = sharedPreferences.getString("kas", "");
+
+
 
 //        if(mos.equals("1")) {
 //            try {
@@ -126,6 +136,7 @@ public class RoutingActivity extends AppCompatActivity implements AdapterForRout
     @Override
     public void onNoteClick(int position) {
         resorsesForUnivers.get(position);
+//        downloadAudio.startDownloading(mJSONURLString);
         //Intent intent = new Intent(this, Vus.class);
         //intent.putParcelableArrayListExtra("list", ides);
         //intent.putExtra("id", String.valueOf(resorsesForUnivers.get(position)));

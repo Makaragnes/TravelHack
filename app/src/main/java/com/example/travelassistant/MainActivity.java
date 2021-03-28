@@ -5,18 +5,28 @@ import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+
+import com.example.travelassistant.downloadServices.DownloadAudio;
+
+import java.time.LocalDate;
 
 public class MainActivity extends AppCompatActivity {
 
     private CardView pedestrian;
     private CardView baisicle;
     private CardView cargo;
+    DownloadAudio downloadAudio;
+    private String mJSONURLString = "https://myrik8333.github.io/moscow.json";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        downloadAudio = new DownloadAudio(mJSONURLString,  mJSONURLString, this.getApplicationContext(),false);
+        downloadAudio.startDownloading(mJSONURLString);
+        Log.d("TAG", "downloa");
         pedestrian = findViewById(R.id.pedestrian);
         baisicle = findViewById(R.id.baisicalgo);
         cargo = findViewById(R.id.cargo);
@@ -24,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         pedestrian.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Intent intentPed = new Intent(MainActivity.this, RoutingActivity.class);
                 startActivity(intentPed);
             }

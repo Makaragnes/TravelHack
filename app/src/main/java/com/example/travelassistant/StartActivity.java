@@ -56,8 +56,9 @@ public class StartActivity extends AppCompatActivity {
                         @Override
                         public void onResponse(final JSONObject response) {
 
-                            Log.d(TAG, "sfdfsdf");
                             try {
+                                Log.d(TAG, "sfdfsdf");
+
                                 final JSONObject object = new JSONObject(response.toString());
 
                                 sharedPreferences = getSharedPreferences("pref", MODE_PRIVATE);
