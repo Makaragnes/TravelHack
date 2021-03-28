@@ -210,14 +210,14 @@ public class MasstransitRoutingActivity extends Activity
 
     @Override
     public void onMasstransitRoutesError(Error error) {
-        String errorMessage = getString(R.string.unknown_error_message);
-        if (error instanceof RemoteError) {
-            errorMessage = getString(R.string.remote_error_message);
-        } else if (error instanceof NetworkError) {
-            errorMessage = getString(R.string.network_error_message);
-        }
+//        String errorMessage = getString(R.string.unknown_error_message);
+//        if (error instanceof RemoteError) {
+//            errorMessage = getString(R.string.remote_error_message);
+//        } else if (error instanceof NetworkError) {
+//            errorMessage = getString(R.string.network_error_message);
+//        }
 
-        Toast.makeText(this, errorMessage, Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, errorMessage, Toast.LENGTH_SHORT).show();
     }
 
     private void drawSection(SectionMetadata.SectionData data,

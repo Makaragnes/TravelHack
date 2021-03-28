@@ -15,6 +15,7 @@
         <activity android:name=".routings.RoutinNavigationActivity"></activity>
         <activity android:name=".TownActivity" />
         <activity android:name=".MainActivity" />
+        <activity android:name=".MasstransitRoutingActivity"></activity>
         <activity
             android:name=".RoutingActivity"
             tools:ignore="Instantiatable" />

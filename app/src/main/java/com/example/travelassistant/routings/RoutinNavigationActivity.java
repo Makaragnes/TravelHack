@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.RelativeLayout;
 
+import com.example.travelassistant.MasstransitRoutingActivity;
 import com.example.travelassistant.R;
 
 public class RoutinNavigationActivity extends AppCompatActivity {
@@ -27,7 +28,7 @@ public class RoutinNavigationActivity extends AppCompatActivity {
         one.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(RoutinNavigationActivity.this, Map.class);
+                Intent intent = new Intent(RoutinNavigationActivity.this, MasstransitRoutingActivity.class);
                 startActivity(intent);
             }
         });
@@ -35,7 +36,7 @@ public class RoutinNavigationActivity extends AppCompatActivity {
         two.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(RoutinNavigationActivity.this, Map.class);
+                Intent intent = new Intent(RoutinNavigationActivity.this, MasstransitRoutingActivity.class);
                 startActivity(intent);
             }
         });
@@ -43,7 +44,7 @@ public class RoutinNavigationActivity extends AppCompatActivity {
         threee.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(RoutinNavigationActivity.this, Map.class);
+                Intent intent = new Intent(RoutinNavigationActivity.this, MasstransitRoutingActivity.class);
                 startActivity(intent);
             }
         });
@@ -51,7 +52,7 @@ public class RoutinNavigationActivity extends AppCompatActivity {
         fore.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(RoutinNavigationActivity.this, Map.class);
+                Intent intent = new Intent(RoutinNavigationActivity.this, MasstransitRoutingActivity.class);
                 startActivity(intent);
             }
         });
@@ -59,7 +60,7 @@ public class RoutinNavigationActivity extends AppCompatActivity {
         five.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(RoutinNavigationActivity.this, Map.class);
+                Intent intent = new Intent(RoutinNavigationActivity.this, MasstransitRoutingActivity.class);
                 startActivity(intent);
             }
         });
